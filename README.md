@@ -1,6 +1,6 @@
 # Car-Segmentation-In-Video-Using-SAM2
 
-In this repository is used SAM2 to segment cars in a traffic road video. In each frame, cars are detected using YOLOv8 small, and then the boxes are passed to SAM2 to segment the cars. It is also used SORT to track cars in the scene.
+In this repository is used SAM2 to segment cars in a traffic road video. In each frame, cars are detected using YOLOv8 small, and then the boxes are passed to SAM2 to segment the cars. It is also used [SORT](https://github.com/abewley/sort) to track cars in the scene.
 
 If you have a GPU compatible with CUDA install
 
