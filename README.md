@@ -11,6 +11,12 @@ pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https
 
 pip install ultralytics==8.3.169
 
+Now we download the model checkpoint hiera small
+https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt
+
+https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml
+
+
 
 
 
