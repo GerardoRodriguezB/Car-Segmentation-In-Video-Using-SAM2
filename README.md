@@ -32,15 +32,15 @@ Clone the SORT repository
 ```bash
 git clone https://github.com/abewley/sort.git
 ```
-And replace the `sort.py` file with the file of the same name in the folder `SORT FILE UPDATED` included in this repository. Then, download the [SAM2 small checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt) and its [configuration file](https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml), and put them in a folder named `sam2_model`
+And replace the `sort.py` file with the file of the same name in the folder `SORT FILE UPDATED` included in this repository, this file contains an important change in the source code of SORT for the correct fucnctioning in this application. Then, download the [SAM2 small checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt) and its [configuration file](https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml), and put them in a folder named `sam2_model`
 
-
+The [video](https://www.youtube.com/watch?v=zOq2XdwHGT0) used in this project is a free stock video. We include in the repository a cut version `cars.mp4`, located in `video` folder. At the end of the execution of the notebook, it is created the processed video in `video` folder, named `cars_processed.mp4`. Below we it is a frame showing the segmentations.
 
 
 
 
 Video cars
-https://www.youtube.com/watch?v=zOq2XdwHGT0
+
 
 
 
