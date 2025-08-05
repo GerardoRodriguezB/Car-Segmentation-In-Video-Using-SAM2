@@ -37,19 +37,3 @@ And replace the `sort.py` file with the file of the same name in the folder `SOR
 The [video](https://www.youtube.com/watch?v=zOq2XdwHGT0) used in this project is a free stock video. We include in the repository a cut version `cars.mp4`, located in `video` folder. At the end of the execution of the notebook, it is created the processed video in `video` folder, named `cars_processed.mp4`. Below we it is a frame showing the segmentations.
 
 
-
-
-Video cars
-
-
-
-
-
-
-
-
-
-
-
-
-
