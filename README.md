@@ -17,6 +17,9 @@ https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt
 https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml
 
 
+Video cars
+https://www.youtube.com/watch?v=zOq2XdwHGT0
+
 
 
 
