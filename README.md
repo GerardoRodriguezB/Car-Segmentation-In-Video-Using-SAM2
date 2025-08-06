@@ -1,6 +1,10 @@
 # Car-Segmentation-In-Video-Using-SAM2
 
-In this repository is used SAM2 to segment cars in a traffic road video. In each frame, cars are detected using [YOLOv8](https://docs.ultralytics.com/models/yolov8/) small, and then the boxes are passed to [SAM2](https://github.com/facebookresearch/sam2) to segment the cars. It is also used [SORT](https://github.com/abewley/sort) to track cars in the scene.
+In this repository SAM2 is used to segment cars in a traffic road video. 
+
+
+
+In each frame, cars are detected using [YOLOv8](https://docs.ultralytics.com/models/yolov8/) small, and then the boxes are passed to [SAM2](https://github.com/facebookresearch/sam2) to segment the cars. It is also used [SORT](https://github.com/abewley/sort) to track cars in the scene.
 
 Creeate an Anaconda environment using `python=3.10`. If you have a GPU compatible with CUDA install
 
