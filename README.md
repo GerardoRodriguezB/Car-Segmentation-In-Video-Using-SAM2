@@ -2,6 +2,7 @@
 
 In this repository SAM2 is used to segment cars in a traffic road video. 
 
+<img src="im/processed_frame.jpg" alt="CARS" width="500" />
 
 
 In each frame, cars are detected using [YOLOv8](https://docs.ultralytics.com/models/yolov8/) small, and then the boxes are passed to [SAM2](https://github.com/facebookresearch/sam2) to segment the cars. It is also used [SORT](https://github.com/abewley/sort) to track cars in the scene.
