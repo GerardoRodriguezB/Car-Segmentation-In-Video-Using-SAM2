@@ -4,29 +4,15 @@ In this repository SAM2 is used to segment cars in a traffic road video.
 
 <img src="im/processed_frame.jpg" alt="CARS" width="500" />
 
+The project uses the following components:
+- Cars are detected using [YOLOv8](https://docs.ultralytics.com/models/yolov8/) small.
+- The bounding boxes are passed to [SAM2](https://github.com/facebookresearch/sam2) for segmentation.
+- [SORT](https://github.com/abewley/sort) is used to track cars accross frames.
 
-In each frame, cars are detected using [YOLOv8](https://docs.ultralytics.com/models/yolov8/) small, and then the boxes are passed to [SAM2](https://github.com/facebookresearch/sam2) to segment the cars. It is also used [SORT](https://github.com/abewley/sort) to track cars in the scene.
 
-Creeate an Anaconda environment using `python=3.10`. If you have a GPU compatible with CUDA install
+## Environment Setup
 
-```bash
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu118
-```
-
-otherwise install the versions for CPU
-
-```bash
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1
-```
-
-Then, install SAM2
-
-```bash
-git clone https://github.com/facebookresearch/sam2.git && cd sam2
-pip install .
-```
-
-Move to the root folder of the project and install requeriments
+Create an Anaconda environment using `python=3.10`. Navigate to the root folder of the project and install requeriments
 
 ```bash
 pip install -r requeriments.txt
@@ -37,8 +23,40 @@ Clone the SORT repository
 ```bash
 git clone https://github.com/abewley/sort.git
 ```
-And replace the `sort.py` file with the file of the same name in the folder `SORT FILE UPDATED` included in this repository, this file contains an important change in the source code of SORT for the correct fucnctioning in this application. Then, download the [SAM2 small checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt) and its [configuration file](https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml), and put them in a folder named `sam2_model`
 
-The [video](https://www.youtube.com/watch?v=zOq2XdwHGT0) used in this project is a free stock video. We include in the repository a cut version `cars.mp4`, located in `video` folder. At the end of the execution of the notebook, it is created the processed video in `video` folder, named `cars_processed.mp4`. Below we it is a frame showing the segmentations.
+Replace the `sort.py` file in the cloned folder with the updated version provided in this repository under the `SORT FILE UPDATED` folder. This modified file includes a key change required for correct functionality in this application.
+
+## Install PyTORCH
+
+If your machine has a CUDA compatible GPU, install:
+
+```bash
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu118
+```
+
+Otherwise, install the versions for CPU
+
+```bash
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1
+```
+
+## Install and Setup SAM2
+Clone the SAM2 repository and install it:
+
+```bash
+git clone https://github.com/facebookresearch/sam2.git && cd sam2
+pip install .
+```
+Download the following files and place them in a folder named `sam2_model`:
+- [Checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt) (sam2.1_hiera_small.pt)
+- [Configuration file](https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml)
+
+
+## Video Input and Output
+
+The video used in this project is a royalty-free video available on [YouTube](https://www.youtube.com/watch?v=zOq2XdwHGT0).
+A trimmed version named `cars.mp4` is included in the `video` folder of this repository.
+
+After executing the notebook, the processed output video will be saved in the same folder as `cars_processed.mp4`.
 
 
