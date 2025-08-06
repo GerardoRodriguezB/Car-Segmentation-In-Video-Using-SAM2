@@ -48,9 +48,8 @@ git clone https://github.com/facebookresearch/sam2.git && cd sam2
 pip install .
 ```
 Download the following files and place them in a folder named `sam2_model`:
-- [Checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt) (sam2.1_hiera_small.pt)
-- [Configuration file](https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml)
-
+- [Checkpoint (sam2.1_hiera_small.pt)](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt) 
+- [Configuration file (sam2.1_hiera_s.yaml)](https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml)
 
 ## Video Input and Output
 
